@@ -1,1 +1,178 @@
+import sys
+import Bio
+from Bio import SeqIO
 
+#L sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_685261.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
+
+#S sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_702206.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
+
+#V sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_700389.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
+
+#G sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_700740.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
+
+#GR sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_700544.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
+
+#GH sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_700322.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
+
+#GV sample
+fname = "/bigdata/gen220/mlope072/COVID19FASTA/EPI_ISL_706965.fasta"
+
+fh = open(fname,'r')
+
+reader = SeqIO.parse(fh, "fasta")
+
+for record in reader:
+    c=0
+    a=0
+    g=0
+    t=0
+    for x in str(record.seq):
+        if "C" in x:
+            c+=1    
+        elif "G" in x:
+            g+=1
+        elif "A" in x:
+            a+=1    
+        elif "T" in x:
+            t+=1
+gc_ratio = (g+c)*100/(a+t+g+c)
+
+print(record.id, gc_ratio)
